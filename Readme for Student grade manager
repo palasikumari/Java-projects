@@ -1,0 +1,11 @@
+A console-based Java application that allows users to manage student records, calculate subject-wise marks, compute averages, and assign grades automatically. It is designed as an easy-to-use academic record system for schools or small institutions.
+
+Technologies Used:
+
+Java SE (Standard Edition)
+
+Java I/O (FileInputStream, Object Serialization)
+
+Collections (ArrayList, HashMap, LinkedHashMap)
+
+Command-line interface
