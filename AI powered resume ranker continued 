@@ -1,0 +1,21 @@
+app.py
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+def compute_similarity(resume_text, jobdesc_text):
+    vectorizer = TfidfVectorizer(stop_words='english')
+    vectors = vectorizer.fit_transform([resume_text, jobdesc_text])
+    sim = cosine_similarity(vectors[0:1], vectors[1:2])
+    return round(float(sim[0][0]), 4)
+
+scorer.py
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+def compute_similarity(resume_text, jobdesc_text):
+    vectorizer = TfidfVectorizer(stop_words='english')
+    vectors = vectorizer.fit_transform([resume_text, jobdesc_text])
+    sim = cosine_similarity(vectors[0:1], vectors[1:2])
+    return round(float(sim[0][0]), 4)
